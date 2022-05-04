@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styleMundial.css">
+    <title>Mundial 2022</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="https://www.qatar2022.qa/themes/custom/sc/dist/img/FIFA-World-Cup-2022-Qatar-emblem.png" alt="">
+    </div>
+    <h1>Fixture Mundial Qatar 2022</h1>
+    <div class="conteiner-repechaje">
+        <h2>Seleccione los ganadores del repechaje</h2>
+        <div class="conteiner-grupos">
+            <div class="grupo-repechaje">
+                <div class="equipo_repechaje">
+                    <img src="files/gales.png" alt="">
+                    <h3>Gales</h3>
+                    <input type="radio" id="gales" name="repechajeG1" value="Gales">
+                </div>
+                <div class="equipo_repechaje">
+                    <img src="files/ucrania.png" alt="">
+                    <h3>Ucrania</h3>
+                    <input type="radio" id="ucrania" name="repechajeG1" value="Ucrania">
+                </div>
+                <div class="equipo_repechaje">
+                    <img src="files/escocia.png" alt="">
+                    <h3>Escocia</h3>
+                    <input type="radio" id="escocia" name="repechajeG1" value="Escocia">
+                </div>
+            </div>
+            <div class="grupo-repechaje" >
+                <div class="equipo_repechaje">
+                    <img src="files/peru.png" alt="">
+                    <h3>Perú</h3>
+                    <input type="radio" id="peru" name="repechajeG2" value="peru">
+                </div>
+                <div class="equipo_repechaje">
+                    <img src="files/australia.png" alt="">
+                    <h3>Australia</h3>
+                    <input type="radio" id="australia" name="repechajeG2" value="australia">
+                </div>
+                <div class="equipo_repechaje">
+                    <img src="files/emiratos.png" alt="">
+                    <h3>Emiratos Arabes Unidos</h3>
+                    <input type="radio" id="emiratos" name="repechajeG2" value="emiratos">
+                </div>
+            </div>
+            <div class="grupo-repechaje" >
+                <div class="equipo_repechaje">
+                    <img src="files/costarica.png" alt="">
+                    <h3>Costa Rica</h3>
+                    <input type="radio" id="costarica" name="repechajeG3" value="costarica">
+                </div>
+                <div class="equipo_repechaje">
+                    <img src="files/nuevazelanda.png" alt="">
+                    <h3>Nueva Zelanda</h3>
+                    <input type="radio" id="nuevzelanda" name="repechajeG3" value="nuevazelanda">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="salto">
+        <img src="https://www.qatar2022.qa/themes/custom/sc/dist/img/svg/purple--dark-diamond.svg" alt="">
+    </div>
+    <div class="faseGrupos">
+        <div class="faseGrupos_grupo" id="fase1">
+            <p class="tituloGrupo">Grupo A</p>
+            <div class="grupo_equipo">
+                <img src="files/qatar.png" alt="">
+                <p>Qatar</p>
+                <input type="radio" id="qatar" name="fgA1" value="Qatar">
+                <input type="radio" id="" name="fgA2" value="Qatar">
+            </div>
+            <div class="grupo_equipo">
+                <img src="files/ecuador.png" alt="">
+                <p>Ecuador</p>
+                <input type="radio" id="ecuador" name="fgA1" value="ecuador">
+                <input type="radio" id="" name="fgA2" value="ecuador">
+            </div>
+            <div class="grupo_equipo">
+                <img src="files/senegal.png" alt="">
+                <p>Senegal</p>
+                <input type="radio" id="senegal" name="fgA1" value="senegal">
+                <input type="radio" id="" name="fgA2" value="senegal">
+            </div>
+            <div class="grupo_equipo">
+                <img src="files/holanda.png" alt="">
+                <p>Holanda</p>
+                <input type="radio" id="holanda" name="fgA1" value="holanda">
+                <input type="radio" id="" name="fgA2" value="holanda">
+            </div>
+        </div>
+        <div class="faseGrupos_grupo" id="fase2">
+            <p class="tituloGrupo">Grupo B</p>
+            <div class="grupo_equipo">
+                <img src="files/inglaterra.png" alt="">
+                <p>Inglaterra</p>
+                <input type="radio" id="inglaterra" name="fgB1" value="inglaterra">
+                <input type="radio" id="" name="fgB2" value="inglaterra">
+            </div>
+            <div class="grupo_equipo">
+                <img src="files/iran.png" alt="">
+                <p>Iran</p>
+                <input type="radio" id="Iran" name="fgB1" value="Iran">
+                <input type="radio" id="" name="fgB2" value="Iran">
+            </div>
+            <div class="grupo_equipo">
+                <img src="files/estadosunidos.png" alt="">
+                <p>Estados Unidos</p>
+                <input type="radio" id="estadosUnidos" name="fgB1" value="estadosUnidos">
+                <input type="radio" id="" name="fgB2" value="estadosUnidos">
+            </div>
+            <div class="grupo_equipo" id="repechaje1">
+                <img  src="files/fifa.png" alt="" id="playoffEuimg">
+                <p id="playoffEup">PlayOff Europeo</p>
+                <input type="radio" id="playOffinput" name="fgB1" value="" >
+                <input type="radio" id="" name="fgB2" value="" >
+            </div>
+        </div>
+        <div class="faseGrupos_grupo" id="fase3">
+            <p class="tituloGrupo">Grupo C</p>
+            <div class="grupo_equipo">
+                <img src="files/argentina.png" alt="">
+                <p>Argentina</p>
+                <input type="radio" id="argetina" name="fgC1" value="argetina">
+                <input type="radio" id="" name="fgC2" value="argetina">
+            </div>
+            <div class="grupo_equipo">
+                <img src="files/arabiasaudita.png" alt="">
+                <p>Arabia Saudi</p>
+                <input type="radio" id="arabiaSaudita" name="fgC1" value="arabiaSaudita">
+                <input type="radio" id="" name="fgC2" value="arabiaSaudita">
+            </div>
+            <div class="grupo_equipo">
+                <img src="files/mexico.png" alt="">
+                <p>Mexico</p>
+                <input type="radio" id="mexico" name="fgC1" value="mexico">
+                <input type="radio" id="" name="fgC2" value="mexico">
+            </div>
+            <div class="grupo_equipo">
+                <img src="files/polonia.png" alt="">
+                <p>Polonia</p>
+                <input type="radio" id="polonia" name="fgC1" value="polonia">
+                <input type="radio" id="" name="fgC2" value="polonia">
+            </div>
+        </div>
+        <div class="faseGrupos_grupo" id="fase4">
+            <p class="tituloGrupo">Grupo D</p>
+            <div class="grupo_equipo">
+                <img src="files/francia.png" alt="">
+                <p>Francia</p>
+                <input type="radio" id="francia" name="fgD1" value="francia">
+                <input type="radio" id="" name="fgD2" value="francia">
+            </div>
+            <div class="grupo_equipo" id="repechaje2">
+                <img src="files/fifa.png" alt="">
+                <p>PlayOff Int. 1</p>
+                <input type="radio" id="" name="fgD1" value="">
+                <input type="radio" id="" name="fgD2" value="">
+            </div>
+            <div class="grupo_equipo">
+                <img src="files/dinamarca.png" alt="">
+                <p>Dinamarca</p>
+                <input type="radio" id="dinamarca" name="fgD1" value="dinamarca">
+                <input type="radio" id="" name="fgD2" value="dinamarca">
+            </div>
+            <div class="grupo_equipo">
+                <img src="files/tunez.png" alt="">
+                <p>Tunez</p>
+                <input type="radio" id="tunez" name="fgD1" value="tunez">
+                <input type="radio" id="" name="fgD2" value="tunez">
+            </div>
+        </div>
+        <div class="faseGrupos_grupo" id="fase5">
+            <p class="tituloGrupo">Grupo E</p>
+            <div class="grupo_equipo">
+                <img src="files/espania.png" alt="">
+                <p>España</p>
+                <input type="radio" id="espania" name="fgE1" value="espania">
+                <input type="radio" id="" name="fgE2" value="espania">
+            </div>
+            <div class="grupo_equipo" id="repechaje3">
+                <img src="files/fifa.png" alt="">
+                <p>PlayOff Int.2</p>
+                <input type="radio" id="" name="fgE1" value="">
+                <input type="radio" id="" name="fgE2" value="">
+            </div>
+            <div class="grupo_equipo">
+                <img src="files/alemania.png" alt="">
+                <p>Alemania</p>
+                <input type="radio" id="alemania" name="fgE1" value="alemania">
+                <input type="radio" id="" name="fgE2" value="alemania">
+            </div>
+            <div class="grupo_equipo">
+                <img src="files/japon.png" alt="">
+                <p>Japon</p>
+                <input type="radio" id="japon" name="fgE1" value="japon">
+                <input type="radio" id="" name="fgE2" value="japon">
+            </div>
+        </div>
+        <div class="faseGrupos_grupo" id="fase6">
+            <p class="tituloGrupo">Grupo F</p>
+            <div class="grupo_equipo">
+                <img src="files/belgica.png" alt="">
+                <p>Belgica</p>
+                <input type="radio" id="belgica" name="fgF1" value="belgica">
+                <input type="radio" id="" name="fgF2" value="belgica">
+            </div>
+            <div class="grupo_equipo">
+                <img src="files/canadapng.png" alt="">
+                <p>Canada</p>
+                <input type="radio" id="canada" name="fgF1" value="canada">
+                <input type="radio" id="" name="fgF2" value="canada">
+            </div>
+            <div class="grupo_equipo">
+                <img src="files/marruecos.png" alt="">
+                <p>Marruecos</p>
+                <input type="radio" id="marruecos" name="fgF1" value="marruecos">
+                <input type="radio" id="" name="fgF2" value="marruecos">
+            </div>
+            <div class="grupo_equipo">
+                <img src="files/croacia.png" alt="">
+                <p>Croacia</p>
+                <input type="radio" id="croacia" name="fgF1" value="croacia">
+                <input type="radio" id="" name="fgF2" value="croacia">
+            </div>
+        </div>
+        <div class="faseGrupos_grupo" id="fase7">
+            <p class="tituloGrupo">Grupo G</p>
+            <div class="grupo_equipo">
+                <img src="files/brasil.png" alt="">
+                <p>Brasil</p>
+                <input type="radio" id="brasil" name="fgG1" value="brasil">
+                <input type="radio" id="" name="fgG2" value="brasil">
+            </div>
+            <div class="grupo_equipo">
+                <img src="files/serbia.png" alt="">
+                <p>Serbia</p>
+                <input type="radio" id="serbia" name="fgG1" value="serbia">
+                <input type="radio" id="" name="fgG2" value="serbia">
+            </div>
+            <div class="grupo_equipo">
+                <img src="files/suiza.png" alt="">
+                <p>Suiza</p>
+                <input type="radio" id="suiza" name="fgG1" value="suiza">
+                <input type="radio" id="" name="fgG2" value="suiza">
+            </div>
+            <div class="grupo_equipo">
+                <img src="files/camerun.png" alt="">
+                <p>Camerun</p>
+                <input type="radio" id="camerun" name="fgG1" value="camerun">
+                <input type="radio" id="" name="fgG2" value="camerun">
+            </div>
+        </div>
+        <div class="faseGrupos_grupo" id="fase8">
+            <p class="tituloGrupo">Grupo H</p>
+            <div class="grupo_equipo">
+                <img src="files/portugal.png" alt="">
+                <p>Portugal</p>
+                <input type="radio" id="portugal" name="fgH1" value="portugal">
+                <input type="radio" id="" name="fgH2" value="portugal">
+            </div>
+            <div class="grupo_equipo">
+                <img src="files/ghana.png" alt="">
+                <p>Ghana</p>
+                <input type="radio" id="ghana" name="fgH1" value="ghana">
+                <input type="radio" id="" name="fgH2" value="ghana">
+            </div>
+            <div class="grupo_equipo">
+                <img src="files/uruguay.png" alt="">
+                <p>Uruguay</p>
+                <input type="radio" id="uruguay" name="fgH1" value="uruguay">
+                <input type="radio" id="" name="fgH2" value="uruguay">
+            </div>
+            <div class="grupo_equipo">
+                <img src="files/corea.png" alt="">
+                <p>Corea</p>
+                <input type="radio" id="corea" name="fgH1" value="corea">
+                <input type="radio" id="" name="fgH2" value="corea">
+            </div>
+        </div>
+        
+    </div>
+    <div class="salto">
+        <img src="https://www.qatar2022.qa/themes/custom/sc/dist/img/svg/purple--dark-diamond.svg" alt="">
+    </div>
+    <div class="conteiner_cruces">
+        <div id="octavos" class="flex hola">
+            <div class="flex centrado">
+                <div class="grupo">
+                    <div>
+                        1°A
+                    </div>
+                    <div class="grupo_equipo" id="primero1">
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="grupo">
+                    <div>
+                        2°B
+                    </div>
+                    <div class="grupo_equipo" id="segundo2">
+                        <img src="" alt="">
+                        <p></p>    
+                    </div>
+
+                </div>
+                
+            </div>
+            <div class="flex centrado">
+
+                <div class="grupo">
+                    <div>
+                        1°C
+                    </div>
+                    <div class="grupo_equipo" id="primero3">
+                        <img src="" alt="">
+                        <p></p>
+                        
+                    </div>
+                </div>
+                <div class="grupo">
+                    <div>
+                        2°D
+                    </div>
+                    <div class="grupo_equipo" id="segundo4">
+                        <img src="" alt="">
+                        <p></p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="flex centrado">
+                <div class="grupo">
+                    <div>
+                        1°E
+                    </div>
+                    <div class="grupo_equipo" id="primero5"> 
+                        <img src="" alt="">
+                        <p></p>
+                        
+                    </div>
+                </div>
+
+                <div class="grupo">
+                    <div>
+                        2°F
+                    </div>
+                    <div class="grupo_equipo" id="segundo6">
+                        <img src="" alt="">
+                        <p></p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="flex centrado">
+                <div class="grupo">
+                    <div>
+                        1°G
+                    </div>
+                    <div class="grupo_equipo" id="primero7">
+                        <img src="" alt="">
+                        <p></p>
+                        
+                    </div>
+                </div>
+                <div class="grupo">
+                    <div>
+                        2°H
+                    </div>
+                    <div class="grupo_equipo">
+                        <img src="" alt="" id="segundo8">
+                        <p></p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="cuartos" class="flex hola">
+            <div class="flex centrado">
+                <div class="grupo_equipo">
+                    <img src="" alt="">
+                    <p></p> 
+                </div>
+                <div class="grupo_equipo">
+                    <img src="" alt="">
+                    <p></p>
+                    
+                </div>
+            </div>
+            <div class="flex centrado">
+                <div class="grupo_equipo">
+                    <img src="" alt="">
+                    <p></p>
+                    
+                </div>
+                <div class="grupo_equipo">
+                    <img src="" alt="">
+                    <p></p>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="semis" class="flex hola">
+            <div class="flex centrado">
+                <div class="grupo_equipo">
+                    <img src="" alt="">
+                    <p></p>
+                    
+                </div>
+                <div class="grupo_equipo">
+                    <img src="" alt="">
+                    <p></p>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="final" class="flex hola">
+            <div class="flex centrado">
+                <div class="grupo_equipo">
+                    <img src="" alt="">
+                    <p></p>
+                    
+                </div>
+                <div class="grupo_equipo">
+                    <img src="" alt="">
+                    <p></p>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="semis" class="flex hola">
+            <div class="flex centrado">
+                <div class="grupo_equipo">
+                    <img src="" alt="">
+                    <p></p>
+                    
+                </div>
+                <div class="grupo_equipo">
+                    <img src="" alt="">
+                    <p></p>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="cuartos" class="flex hola">
+            <div class="flex centrado">
+                <div class="grupo_equipo">
+                    <img src="" alt="">
+                    <p></p>
+                    
+                </div>
+                <div class="grupo_equipo">
+                    <img src="" alt="">
+                    <p></p>    
+                </div>
+            </div>
+            <div class="flex centrado">
+                <div class="grupo_equipo">
+                    <img src="" alt="">
+                    <p></p>
+                    
+                </div>
+                <div class="grupo_equipo">
+                    <img src="" alt="">
+                    <p></p>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="octavos" class="flex hola">
+            <div class="flex centrado">
+                <div class="grupo">
+                    <div class="grupo_equipo" id="primero2">
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                    <div>
+                        1°B
+                    </div>
+                </div>
+                <div class="grupo">
+                    <div class="grupo_equipo" id="segundo1">
+                        <img src="" alt="">
+                        <p></p>    
+                    </div>
+                    <div>
+                        2°A
+                    </div>
+                </div>
+                
+            </div>
+            <div class="flex centrado">
+
+                <div class="grupo">
+                    <div class="grupo_equipo" id="primero4">
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                    <div>
+                        1°D
+                    </div>
+                </div>
+                <div class="grupo">
+                    <div class="grupo_equipo" id="segundo3">
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                    <div>
+                        2°C
+                    </div>
+                </div>
+            </div>
+            <div class="flex centrado">
+                <div class="grupo">
+                    <div class="grupo_equipo" id="primero6"> 
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                    <div>
+                        1°F
+                    </div>
+                </div>
+
+                <div class="grupo"> 
+                    <div class="grupo_equipo" id="segundo5">
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                    <div>
+                        2°E
+                    </div>
+                </div>
+            </div>
+            <div class="flex centrado">
+                <div class="grupo">
+                    <div class="grupo_equipo" id="primero8">
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                    <div>
+                        1°H
+                    </div>
+                </div>
+                <div class="grupo">
+                    <div class="grupo_equipo" id="segundo7">
+                        <img src="" alt="">
+                        <p></p>
+                    </div>
+                    <div>
+                        2°G
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+    </footer>
+    <script src="js/mundial.js"></script>
+</body>
+</html>

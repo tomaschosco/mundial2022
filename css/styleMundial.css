@@ -1,0 +1,166 @@
+@font-face {
+    font-family: "qatar";
+    src: url(../font/Qatar2022Arabic-Heavy.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "qatar";
+}
+.header{
+    display: flex;
+    justify-content: center;
+    
+}
+.logo{
+    margin: 15px 0 10px 15px;
+}
+.logo > img{
+    height: 90px;
+}
+h1{
+    color: #FFFFFF;
+    text-align: center;
+    
+}
+body{
+    height: auto;
+    background: linear-gradient(
+  130deg,
+  hsl(343deg 84% 33%) 18%,
+  hsl(343deg 84% 31%) 61%,
+  hsl(343deg 84% 28%) 73%,
+  hsl(343deg 85% 26%) 80%,
+  hsl(343deg 85% 24%) 84%,
+  hsl(343deg 85% 21%) 87%,
+  hsl(343deg 85% 17%) 90%,
+  hsl(343deg 87% 13%) 93%,
+  hsl(340deg 100% 7%) 100%
+);
+}
+.conteiner-repechaje{
+    margin: 15px;
+    padding: 20px;
+    border-style: solid;
+    border-radius: 0px 43px 0px 43px / 0px 40px 0px 40px;
+    border-color: #6d2e52;
+    background-color: #47032b;
+    color: #FFFFFF;
+    height: 300px;
+}
+.conteiner-repechaje > h2 {
+    text-align: center;
+    padding: 15px 0;
+}
+.conteiner-grupos{
+    height: 70%;
+    display: flex;
+    gap: 12px;
+}
+.grupo-repechaje{
+    border-style: solid;
+    border-color: #6d2e52;
+    border-radius: 43px 0px 43px 0px / 40px 0px 40px 0px;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.equipo_repechaje{
+    display: flex;
+    width: 89%;
+    justify-content: space-between;
+    padding: 5px;
+}
+.equipo_repechaje > img{
+    width: 50px;
+}
+input{
+    align-self: center;
+}
+.salto{
+    margin: 55px 0;
+    display: flex;
+    justify-content: center;
+}
+.faseGrupos{
+    padding: 15px;
+    height: 600px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4,250px);
+    grid-gap: 15px;
+}
+.faseGrupos_grupo{
+    background-color: #FFFFFF;
+    color: #47032b;
+    border-style: solid;
+    border-color: #6d2e52;
+    align-items: center;
+    height: 260px;
+
+}
+.grupo_equipo{
+    display: flex;
+    justify-content: space-between;
+    border-style: solid;
+    border-color: #FFFFFF;
+    width: 100%;
+}
+.grupo_equipo > img {
+    width: 50px;
+}
+.grupo_equipo >p{
+    font-size: 18px;
+}
+.grupo{
+    display: flex;
+}
+
+.tituloGrupo{
+    text-align: center;
+    font-size: 23px;
+    padding-top: 9px;
+}
+.conteiner_cruces{
+    margin: 5px;
+    height: 600px;
+    background-color:#47032b;
+    color: #FFFFFF;
+    display: flex;
+    
+    gap: 15px;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+.hola{
+    width: 200px;
+}
+#octavos > div{
+    height: 100%;
+    width: 100%;
+}
+.centrado{
+    justify-content: center;
+}
+#cuartos > div{
+    height: 100%;
+    width: 100%;
+}
+#semis > div{
+    height: 100%;
+    width: 100%;
+}
+#final > div{
+    height: 100%;
+    width: 100%;
+}
+
+footer{
+    height: 500px;
+}
