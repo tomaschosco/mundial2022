@@ -66,6 +66,11 @@ let cruces=[{
 }
 ];
 
+
+let removeAccents = (str) => {
+    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+} 
+
 let findSelected = (i) => {
     let index=i;
     let nodos= document.querySelector(`#repechaje${index}`).children;
@@ -80,8 +85,8 @@ let findSelected = (i) => {
     input.setAttribute("id",selected);
     input.setAttribute("value",selected);
     input2.setAttribute("value",selected);
-    img.setAttribute("src",`files/${selected}.png` )
-    console.log(selected);
+    let aux= removeAccents(selected).toLowerCase().replace(/ /g, "");
+    img.setAttribute("src",`files/${aux}.png` );
 }
 
 for(let i=1;i<=3;i++){
@@ -106,7 +111,7 @@ for (let j=1;j<=8; j++){
             let imprimir;
             if(e.target.name[3]=='1'){
                 name= e.target.name.replace('1','2');
-                if(document.querySelector(`input[name=${name}][value=${selected}]`).checked){
+                if(document.querySelector(`input[name=${name}][value='${selected}']`).checked){
                     console.log('estoy aca');
                     document.querySelectorAll(`input[name=${name}`).forEach( (x) => x.checked = false );
                     //limpiar
@@ -116,6 +121,7 @@ for (let j=1;j<=8; j++){
                     inputl=nodosl[2];
                     pl.textContent='';
                     imgl.setAttribute("src",'' );
+                    inputl.setAttribute("hidden",true);
 
                 }
                 nodos= document.querySelector(`#primero${j}`).children;
@@ -123,7 +129,7 @@ for (let j=1;j<=8; j++){
             }
             else{
                 name= e.target.name.replace('2','1');
-                if(document.querySelector(`input[name=${name}][value=${selected}]`).checked){
+                if(document.querySelector(`input[name=${name}][value='${selected}']`).checked){
                     console.log('estoy aca');
                     document.querySelectorAll(`input[name=${name}`).forEach( (x) => x.checked = false );
                     //limpiar
@@ -133,6 +139,7 @@ for (let j=1;j<=8; j++){
                     inputl=nodosl[2];
                     pl.textContent='';
                     imgl.setAttribute("src",'' );
+                    inputl.setAttribute("hidden",true);
                 }
                 nodos= document.querySelector(`#segundo${j}`).children;
                 imprimir=`segundo${j}`;
@@ -159,19 +166,17 @@ for (let j=1;j<=8; j++){
                     contenedor1[0].setAttribute("src",'');
                     contenedor1[1].textContent='';
                     contenedor1[2].setAttribute("value",'');
+                    contenedor1[2].setAttribute("hidden",true);
                     contenedor1[2].checked=false;
                     //desmarco el otro input
                     contenedor2[2].checked=false;
                 }
             }
-            
             p.textContent=selected;
-            img.setAttribute("src",`files/selected.png` );
+            let aux= removeAccents(selected).toLowerCase().replace(/ /g, "");
+            img.setAttribute("src",`files/${aux}.png` );
             input.setAttribute("value",selected);
-            console.log(selected);
-            
-
-
+            input.removeAttribute("hidden", "");
         }
     })
 }
@@ -203,12 +208,16 @@ for(let n=1;n<=8;n++){
                     contenedor1[0].setAttribute("src",'');
                     contenedor1[1].textContent='';
                     contenedor1[2].setAttribute("value",'');
+                    contenedor1[2].setAttribute("hidden",true);
                     contenedor1[2].checked=false;
                     //desmarco el otro input
                     contenedor2[2].checked=false;
                 }
             }
+            let aux= removeAccents(e.target.value).toLowerCase().replace(/ /g, "");
+            img.setAttribute("src",`files/${aux}.png`)
             input.setAttribute("value",e.target.value);
+            input.removeAttribute("hidden","");
             p.textContent=e.target.value;
 
         }
@@ -232,9 +241,13 @@ for(let m=1;m<=4; m++){
                 index[0].setAttribute('src','');
                 index[1].textContent='';
                 index[2].setAttribute('value','');
+                index[2].setAttribute('hidden',true);
                 document.querySelectorAll(`input[name='${index[2].name}'`).forEach( (x) => x.checked = false );
             }
+            let aux= removeAccents(e.target.value).toLowerCase().replace(/ /g, "");
+            img.setAttribute("src",`files/${aux}.png`)
             input.setAttribute("value",e.target.value);
+            input.removeAttribute("hidden","");
             p.textContent=e.target.value;   
         }
     })
@@ -248,8 +261,11 @@ for(let m=1;m<=2; m++){
             let img=final[0];
             let p =final[1];
             let input=final[2]
+            let aux= removeAccents(e.target.value).toLowerCase().replace(/ /g, "");
+            img.setAttribute("src",`files/${aux}.png`)
             input.setAttribute("value",e.target.value);
-            p.textContent=e.target.value;   
+            input.removeAttribute("hidden","");
+            p.textContent=e.target.value;    
         }
     })
 
