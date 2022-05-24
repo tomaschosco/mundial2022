@@ -73,6 +73,9 @@ let removeAccents = (str) => {
 
 let findSelected = (i) => {
     let index=i;
+    let padre= document.getElementById(`repechaje${index}`);
+    console.log(padre);
+    padre.setAttribute("class","grupo_equipo");
     let nodos= document.querySelector(`#repechaje${index}`).children;
     let selected = document.querySelector(`input[name='repechajeG${index}']:checked`).value;
     let img=nodos[0];

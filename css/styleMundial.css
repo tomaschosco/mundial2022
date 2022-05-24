@@ -19,10 +19,18 @@
 .logo > img{
     height: 90px;
 }
-h1{
+.titulo{
     color: #FFFFFF;
     text-align: center;
-    
+    letter-spacing: 1px;
+    font-size: 45px;
+}
+.parrafo{
+    padding: 25px 0px;
+    font-size: 30px;
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 1px;
 }
 body{
     height: auto;
@@ -39,13 +47,19 @@ body{
   hsl(340deg 100% 7%) 100%
 );
 }
+.h3{
+    width: 80%;
+    text-align: center;
+}
 .conteiner-repechaje{
     margin: 15px;
     padding: 20px;
+    /*
     border-style: solid;
     border-radius: 0px 43px 0px 43px / 0px 40px 0px 40px;
     border-color: #6d2e52;
     background-color: #47032b;
+    */
     color: #FFFFFF;
     height: 300px;
 }
@@ -58,6 +72,11 @@ body{
     display: flex;
     gap: 12px;
 }
+.fontRepechaje{
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding: 7px 0px;
+}
 .grupo-repechaje{
     border-style: solid;
     border-color: #6d2e52;
@@ -65,15 +84,17 @@ body{
     width: 33%;
     display: flex;
     flex-direction: column;
+    /*
     justify-content: center;
+    */
     align-items: center;
-    
+    background-color:#47032b;
 }
 .equipo_repechaje{
     display: flex;
     width: 89%;
-    justify-content: space-between;
     padding: 5px;
+    letter-spacing: 1px;
 }
 .equipo_repechaje > img{
     width: 50px;
@@ -94,28 +115,91 @@ input{
     grid-template-columns: repeat(4,250px);
     grid-gap: 15px;
 }
-.faseGrupos_grupo{
-    background-color: #FFFFFF;
-    color: #47032b;
+.faseGrupos_grupo {
+    color: #FFFFFF;
+    background-color: #47032b;
     border-style: solid;
     border-color: #6d2e52;
-    align-items: center;
     height: 260px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1px 5px;
+}
+.clasificacion {
+    display: flex;
+    justify-content: end;
+}
+.span {
+    width: 23.39px;
+    text-align: center;
+}
+.color1 {
+    color: #05ad1b;
+}
+.color2 {
+    color: #af0606;
+}
+.repechajediv{
+    display: flex;
+    width: 100%;
+}
+.repechajediv >img{
+    width: 20%;
+}
+.repechajediv >p{
+    width: 60%;
+    text-align: center;
 }
 .grupo_equipo{
     display: flex;
     justify-content: space-between;
+    /*  BORDES PUESTOS EN LAS LLAVES
     border-style: solid;
     border-color: #FFFFFF;
+    */
+    letter-spacing: 1px;
     width: 100%;
+    height: 32px;
 }
 .grupo_equipo > img {
-    width: 50px;
+    width: 20%;
 }
 .grupo_equipo >p{
-    font-size: 18px;
+    text-align: center;
+    font-size: 17px;
+    width: 60%;
+    align-self: center;
 }
+.grupo_equipo >input{
+    width: 10%;
+}
+
+/*
+HOLA
+*/
+.grupoequipo {
+    display: flex;
+    justify-content: space-between;
+    border-style: solid;
+    border-color: #6d2e52;
+    width: 100%;
+    height: 32px;
+}
+.grupoequipo > img {
+    width: 25%;
+}
+.grupoequipo >p{
+    text-align: center;
+    font-size: 12px;
+    width: 65%;
+    align-self: center;
+    letter-spacing: 1px;
+}
+.grupoequipo >input{
+    width: 10%;
+}
+
 .grupo{
     display: flex;
 }
@@ -131,8 +215,6 @@ input{
     background-color:#47032b;
     color: #FFFFFF;
     display: flex;
-    
-    gap: 15px;
 }
 .flex{
     display: flex;
@@ -163,4 +245,32 @@ input{
 
 footer{
     height: 500px;
+}
+.posicion {
+    font-size: 8.5px;
+    width: 10%;
+}
+.izq>input{
+    order:1 ;
+}
+.izq>img{
+    order:3 ;
+}
+.izq>p{
+    order:2;
+}
+.imgFinal> img{
+    width: 100%;
+    height: 100%;
+}
+.fuenteQatar{
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+.pfinal >p{
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 17px;
+    margin-bottom: 9px;
 }

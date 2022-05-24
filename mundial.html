@@ -11,53 +11,62 @@
     <div class="logo">
         <img src="https://www.qatar2022.qa/themes/custom/sc/dist/img/FIFA-World-Cup-2022-Qatar-emblem.png" alt="">
     </div>
-    <h1>Fixture Mundial Qatar 2022</h1>
+    <p class="titulo">Fixture Mundial Qatar 2022</p>
     <div class="conteiner-repechaje">
-        <h2>Seleccione los ganadores del repechaje</h2>
+        <p class="parrafo">Seleccione los ganadores del repechaje</p>
         <div class="conteiner-grupos">
             <div class="grupo-repechaje">
+                <div>
+                    <p class="fontRepechaje">Repechaje Europeo</p>
+                </div>
                 <div class="equipo_repechaje">
                     <img src="files/gales.png" alt="">
-                    <h3>Gales</h3>
+                    <h3 class="h3">Gales</h3>
                     <input type="radio" id="gales" name="repechajeG1" value="Gales">
                 </div>
                 <div class="equipo_repechaje">
                     <img src="files/ucrania.png" alt="">
-                    <h3>Ucrania</h3>
+                    <h3 class="h3">Ucrania</h3>
                     <input type="radio" id="ucrania" name="repechajeG1" value="Ucrania">
                 </div>
                 <div class="equipo_repechaje">
                     <img src="files/escocia.png" alt="">
-                    <h3>Escocia</h3>
+                    <h3 class="h3">Escocia</h3>
                     <input type="radio" id="escocia" name="repechajeG1" value="Escocia">
                 </div>
             </div>
             <div class="grupo-repechaje" >
+                <div>
+                    <p class="fontRepechaje">Repechaje Int. 1</p>
+                </div>
                 <div class="equipo_repechaje">
                     <img src="files/peru.png" alt="">
-                    <h3>Perú</h3>
+                    <h3 class="h3">Perú</h3>
                     <input type="radio" id="peru" name="repechajeG2" value="Perú">
                 </div>
                 <div class="equipo_repechaje">
                     <img src="files/australia.png" alt="">
-                    <h3>Australia</h3>
+                    <h3 class="h3">Australia</h3>
                     <input type="radio" id="australia" name="repechajeG2" value="Australia">
                 </div>
                 <div class="equipo_repechaje">
-                    <img src="files/emiratosarabesunidos.png" alt="">
-                    <h3>Emiratos Arabes Unidos</h3>
-                    <input type="radio" id="emiratos" name="repechajeG2" value="Emiratos Arabes Unidos">
+                    <img src="files/emiratosarabes.png" alt="">
+                    <h3 class="h3">Emiratos Árabes</h3>
+                    <input type="radio" id="emiratos" name="repechajeG2" value="Emiratos Arabes">
                 </div>
             </div>
             <div class="grupo-repechaje" >
+                <div>
+                    <p class="fontRepechaje">Repechaje Int. 2</p>
+                </div>
                 <div class="equipo_repechaje">
                     <img src="files/costarica.png" alt="">
-                    <h3>Costa Rica</h3>
+                    <h3 class="h3">Costa Rica</h3>
                     <input type="radio" id="costarica" name="repechajeG3" value="Costa Rica">
                 </div>
                 <div class="equipo_repechaje">
                     <img src="files/nuevazelanda.png" alt="">
-                    <h3>Nueva Zelanda</h3>
+                    <h3 class="h3">Nueva Zelanda</h3>
                     <input type="radio" id="nuevzelanda" name="repechajeG3" value="Nueva Zelanda">
                 </div>
             </div>
@@ -69,6 +78,10 @@
     <div class="faseGrupos">
         <div class="faseGrupos_grupo" id="fase1">
             <p class="tituloGrupo">Grupo A</p>
+            <div class="clasificacion">
+                <span class="span color1">1º</span>
+                <span class="span color2">2º</span>
+            </div>
             <div class="grupo_equipo">
                 <img src="files/qatar.png" alt="">
                 <p>Qatar</p>
@@ -96,6 +109,10 @@
         </div>
         <div class="faseGrupos_grupo" id="fase2">
             <p class="tituloGrupo">Grupo B</p>
+            <div class="clasificacion">
+                <span class="span color1">1º</span>
+                <span class="span color2">2º</span>
+            </div>
             <div class="grupo_equipo">
                 <img src="files/inglaterra.png" alt="">
                 <p>Inglaterra</p>
@@ -114,7 +131,7 @@
                 <input type="radio" id="estadosUnidos" name="fgB1" value="Estados Unidos">
                 <input type="radio" id="" name="fgB2" value="Estados Unidos">
             </div>
-            <div class="grupo_equipo" id="repechaje1">
+            <div class="repechajediv" id="repechaje1">
                 <img  src="files/fifa.png" alt="" id="playoffEuimg">
                 <p id="playoffEup">PlayOff Europeo</p>
                 <input type="radio" id="playOffinput" name="fgB1" value="" hidden>
@@ -123,6 +140,10 @@
         </div>
         <div class="faseGrupos_grupo" id="fase3">
             <p class="tituloGrupo">Grupo C</p>
+            <div class="clasificacion">
+                <span class="span color1">1º</span>
+                <span class="span color2">2º</span>
+            </div>
             <div class="grupo_equipo">
                 <img src="files/argentina.png" alt="">
                 <p>Argentina</p>
@@ -131,7 +152,7 @@
             </div>
             <div class="grupo_equipo">
                 <img src="files/arabiasaudita.png" alt="">
-                <p>Arabia Saudi</p>
+                <p>Arabia Saudita</p>
                 <input type="radio" id="arabiaSaudita" name="fgC1" value="Arabia Saudita">
                 <input type="radio" id="" name="fgC2" value="Arabia Saudita">
             </div>
@@ -150,13 +171,17 @@
         </div>
         <div class="faseGrupos_grupo" id="fase4">
             <p class="tituloGrupo">Grupo D</p>
+            <div class="clasificacion">
+                <span class="span color1">1º</span>
+                <span class="span color2">2º</span>
+            </div>
             <div class="grupo_equipo">
                 <img src="files/francia.png" alt="">
                 <p>Francia</p>
                 <input type="radio" id="francia" name="fgD1" value="Francia">
                 <input type="radio" id="" name="fgD2" value="Francia">
             </div>
-            <div class="grupo_equipo" id="repechaje2">
+            <div class="repechajediv" id="repechaje2">
                 <img src="files/fifa.png" alt="">
                 <p>PlayOff Int. 1</p>
                 <input type="radio" id="" name="fgD1" value="" hidden>
@@ -177,13 +202,17 @@
         </div>
         <div class="faseGrupos_grupo" id="fase5">
             <p class="tituloGrupo">Grupo E</p>
+            <div class="clasificacion">
+                <span class="span color1">1º</span>
+                <span class="span color2">2º</span>
+            </div>
             <div class="grupo_equipo">
                 <img src="files/espana.png" alt="">
                 <p>España</p>
                 <input type="radio" id="españa" name="fgE1" value="España">
                 <input type="radio" id="" name="fgE2" value="España">
             </div>
-            <div class="grupo_equipo" id="repechaje3">
+            <div class="repechajediv" id="repechaje3">
                 <img src="files/fifa.png" alt="">
                 <p>PlayOff Int.2</p>
                 <input type="radio" id="" name="fgE1" value="" hidden>
@@ -204,6 +233,10 @@
         </div>
         <div class="faseGrupos_grupo" id="fase6">
             <p class="tituloGrupo">Grupo F</p>
+            <div class="clasificacion">
+                <span class="span color1">1º</span>
+                <span class="span color2">2º</span>
+            </div>
             <div class="grupo_equipo">
                 <img src="files/belgica.png" alt="">
                 <p>Bélgica</p>
@@ -211,7 +244,7 @@
                 <input type="radio" id="" name="fgF2" value="Bélgica">
             </div>
             <div class="grupo_equipo">
-                <img src="files/canadapng.png" alt="">
+                <img src="files/canada.png" alt="">
                 <p>Canadá</p>
                 <input type="radio" id="canada" name="fgF1" value="Canadá">
                 <input type="radio" id="" name="fgF2" value="Canadá">
@@ -231,6 +264,10 @@
         </div>
         <div class="faseGrupos_grupo" id="fase7">
             <p class="tituloGrupo">Grupo G</p>
+            <div class="clasificacion">
+                <span class="span color1">1º</span>
+                <span class="span color2">2º</span>
+            </div>
             <div class="grupo_equipo">
                 <img src="files/brasil.png" alt="">
                 <p>Brasil</p>
@@ -258,6 +295,10 @@
         </div>
         <div class="faseGrupos_grupo" id="fase8">
             <p class="tituloGrupo">Grupo H</p>
+            <div class="clasificacion">
+                <span class="span color1">1º</span>
+                <span class="span color2">2º</span>
+            </div>
             <div class="grupo_equipo">
                 <img src="files/portugal.png" alt="">
                 <p>Portugal</p>
@@ -292,20 +333,20 @@
         <div id="octavos" class="flex hola">
             <div class="flex centrado" id="llave1">
                 <div class="grupo" >
-                    <div>
+                    <div class="posicion">
                         1°A
                     </div>
-                    <div class="grupo_equipo" id="primero1">
+                    <div class="grupoequipo" id="primero1">
                         <img src="" alt="">
                         <p></p>
                         <input type="radio" name="1cuartos1" hidden>
                     </div>
                 </div>
                 <div class="grupo">
-                    <div>
+                    <div class="posicion">
                         2°B
                     </div>
-                    <div class="grupo_equipo" id="segundo2">
+                    <div class="grupoequipo" id="segundo2">
                         <img src="" alt="">
                         <p></p>    
                         <input type="radio" name="1cuartos1" hidden>
@@ -316,20 +357,20 @@
             </div>
             <div class="flex centrado" id="llave2">
                 <div class="grupo">
-                    <div>
+                    <div class="posicion">
                         1°C
                     </div>
-                    <div class="grupo_equipo" id="primero3">
+                    <div class="grupoequipo" id="primero3">
                         <img src="" alt="">
                         <p></p>
                         <input type="radio" name="1cuartos2" hidden>
                     </div>
                 </div>
                 <div class="grupo">
-                    <div>
+                    <div class="posicion">
                         2°D
                     </div>
-                    <div class="grupo_equipo" id="segundo4">
+                    <div class="grupoequipo" id="segundo4">
                         <img src="" alt="">
                         <p></p>
                         <input type="radio" name="1cuartos2" hidden>
@@ -338,10 +379,10 @@
             </div>
             <div class="flex centrado" id="llave3">
                 <div class="grupo">
-                    <div>
+                    <div class="posicion">
                         1°E
                     </div>
-                    <div class="grupo_equipo" id="primero5"> 
+                    <div class="grupoequipo" id="primero5"> 
                         <img src="" alt="">
                         <p></p>
                         <input type="radio" name="2cuartos1" hidden>
@@ -349,10 +390,10 @@
                 </div>
 
                 <div class="grupo">
-                    <div>
+                    <div class="posicion">
                         2°F
                     </div>
-                    <div class="grupo_equipo" id="segundo6">
+                    <div class="grupoequipo" id="segundo6">
                         <img src="" alt="">
                         <p></p>
                         <input type="radio" name="2cuartos1" hidden>
@@ -361,20 +402,20 @@
             </div>
             <div class="flex centrado" id="llave4">
                 <div class="grupo">
-                    <div>
+                    <div class="posicion">
                         1°G
                     </div>
-                    <div class="grupo_equipo" id="primero7">
+                    <div class="grupoequipo" id="primero7">
                         <img src="" alt="">
                         <p></p>
                         <input type="radio" name="2cuartos2" hidden>
                     </div>
                 </div>
                 <div class="grupo">
-                    <div>
+                    <div class="posicion">
                         2°H
                     </div>
-                    <div class="grupo_equipo" id="segundo8">
+                    <div class="grupoequipo" id="segundo8">
                         <img src="" alt="" >
                         <p></p>
                         <input type="radio" name="2cuartos2" hidden>
@@ -384,12 +425,12 @@
         </div>
         <div id="cuartos" class="flex hola">
             <div class="flex centrado" id="llaveCuartos1">
-                <div class="grupo_equipo" id="1cuartos1">
+                <div class="grupoequipo" id="1cuartos1">
                     <img src="" alt="">
                     <p></p>
                     <input type="radio" name="1semis1" value="" hidden>
                 </div>
-                <div class="grupo_equipo" id="1cuartos2">
+                <div class="grupoequipo" id="1cuartos2">
                     <img src="" alt="">
                     <p></p>
                     <input type="radio" name="1semis1" value="" hidden>
@@ -397,13 +438,13 @@
                 </div>
             </div>
             <div class="flex centrado" id="llaveCuartos2">
-                <div class="grupo_equipo" id="2cuartos1">
+                <div class="grupoequipo" id="2cuartos1">
                     <img src="" alt="">
                     <p></p>
                     <input type="radio" name="1semis2" value="" hidden>
                     
                 </div>
-                <div class="grupo_equipo" id="2cuartos2">
+                <div class="grupoequipo" id="2cuartos2">
                     <img src="" alt="">
                     <p></p>
                     <input type="radio" name="1semis2" value="" hidden>
@@ -413,12 +454,12 @@
         </div>
         <div id="semis" class="flex hola">
             <div class="flex centrado" id="llaveSemis1">
-                <div class="grupo_equipo" id="1semis1">
+                <div class="grupoequipo" id="1semis1">
                     <img src="" alt="">
                     <p></p>
                     <input type="radio" name="final1" value="" hidden>
                 </div>
-                <div class="grupo_equipo" id="1semis2">
+                <div class="grupoequipo" id="1semis2">
                     <img src="" alt="">
                     <p></p>
                     <input type="radio" name="final1" value="" hidden>
@@ -427,28 +468,36 @@
         </div>
         <div id="final" class="flex hola">
             <div class="flex centrado" id="llaveFinal">
-                <div class="grupo_equipo" id="final1">
+                <div class="pfinal">
+                    <p>FINAL</p>
+                </div>
+                <div class="grupoequipo" id="final1">
                     <img src="" alt="">
                     <p></p>
                     <input type="radio" name="final" value="" hidden>
                     
                 </div>
-                <div class="grupo_equipo" id="final2">
+                <div class="grupoequipo" id="final2">
                     <img src="" alt="">
                     <p></p>
                     <input type="radio" name="final" value="" hidden>
                 </div>
+                <div class="imgFinal">
+                    <img src="files/[CITYPNG.COM]Download Glowing Fifa World Cup Trophy PNG - 1017x1072.png" alt="">
+                </div>
+                <p class="fuenteQatar">QATAR 2022</p>
+                
             </div>
         </div>
         <div id="semis" class="flex hola">
             <div class="flex centrado" id="llaveSemis2">
-                <div class="grupo_equipo" id="2semis1">
+                <div class="grupoequipo izq" id="2semis1">
                     <img src="" alt="">
                     <p></p>
                     <input type="radio" name="final2" value="" hidden>
                     
                 </div>
-                <div class="grupo_equipo" id="2semis2">
+                <div class="grupoequipo izq" id="2semis2">
                     <img src="" alt="">
                     <p></p>
                     <input type="radio" name="final2" value="" hidden>
@@ -457,26 +506,26 @@
         </div>
         <div id="cuartos" class="flex hola">
             <div class="flex centrado" id="llaveCuartos3">
-                <div class="grupo_equipo" id="3cuartos1">
+                <div class="grupoequipo izq" id="3cuartos1">
                     <img src="" alt="">
                     <p></p>
                     <input type="radio" name="2semis1" value="" hidden>
                     
                 </div>
-                <div class="grupo_equipo" id="3cuartos2">
+                <div class="grupoequipo izq" id="3cuartos2">
                     <img src="" alt="">
                     <p></p>
                     <input type="radio" name="2semis1" value="" hidden>
                 </div>
             </div>
             <div class="flex centrado" id="llaveCuartos4">
-                <div class="grupo_equipo" id="4cuartos1">
+                <div class="grupoequipo izq" id="4cuartos1">
                     <img src="" alt="">
                     <p></p>
                     <input type="radio" name="2semis2" value="" hidden>
                     
                 </div>
-                <div class="grupo_equipo" id="4cuartos2">
+                <div class="grupoequipo izq" id="4cuartos2">
                     <img src="" alt="">
                     <p></p>
                     <input type="radio" name="2semis2" value="" hidden>
@@ -487,22 +536,22 @@
         <div id="octavos" class="flex hola">
             <div class="flex centrado" id="llave5">
                 <div class="grupo" id="octavos1">
-                    <div class="grupo_equipo" id="primero2">
+                    <div class="grupoequipo izq" id="primero2">
                         <img src="" alt="">
                         <p></p>
                         <input type="radio" name="3cuartos1" hidden>
                     </div>
-                    <div>
+                    <div class="posicion">
                         1°B
                     </div>
                 </div>
                 <div class="grupo">
-                    <div class="grupo_equipo" id="segundo1">
+                    <div class="grupoequipo izq" id="segundo1">
                         <img src="" alt="">
                         <p></p>    
                         <input type="radio" name="3cuartos1" hidden>
                     </div>
-                    <div>
+                    <div class="posicion">
                         2°A
                     </div>
                 </div>
@@ -511,67 +560,67 @@
             <div class="flex centrado" id="llave6">
 
                 <div class="grupo">
-                    <div class="grupo_equipo" id="primero4">
+                    <div class="grupoequipo izq" id="primero4">
                         <img src="" alt="">
                         <p></p>
                         <input type="radio" name="3cuartos2" hidden>
                     </div>
-                    <div>
+                    <div class="posicion">
                         1°D
                     </div>
                 </div>
                 <div class="grupo">
-                    <div class="grupo_equipo" id="segundo3">
+                    <div class="grupoequipo izq" id="segundo3">
                         <img src="" alt="">
                         <p></p>
                         <input type="radio" name="3cuartos2" hidden>
                     </div>
-                    <div>
+                    <div class="posicion">
                         2°C
                     </div>
                 </div>
             </div>
             <div class="flex centrado" id="llave7">
                 <div class="grupo">
-                    <div class="grupo_equipo" id="primero6"> 
+                    <div class="grupoequipo izq" id="primero6"> 
                         <img src="" alt="">
                         <p></p>
                         <input type="radio" name="4cuartos1" hidden>
                     </div>
-                    <div>
+                    <div class="posicion">
                         1°F
                     </div>
                 </div>
 
                 <div class="grupo"> 
-                    <div class="grupo_equipo" id="segundo5">
+                    <div class="grupoequipo izq" id="segundo5">
                         <img src="" alt="">
                         <p></p>
                         <input type="radio" name="4cuartos1" hidden>
                     </div>
-                    <div>
+                    <div class="posicion">
                         2°E
                     </div>
                 </div>
             </div>
             <div class="flex centrado" id="llave8">
                 <div class="grupo">
-                    <div class="grupo_equipo" id="primero8">
+                    <div class="grupoequipo izq" id="primero8">
                         <img src="" alt="">
                         <p></p>
                         <input type="radio" name="4cuartos2" hidden>
                     </div>
-                    <div>
+                    <div class="posicion">
                         1°H
                     </div>
                 </div>
                 <div class="grupo">
-                    <div class="grupo_equipo" id="segundo7">
+                    <div class="grupoequipo izq" id="segundo7">
                         <img src="" alt="">
                         <p></p>
                         <input type="radio" name="4cuartos2" hidden>
                     </div>
-                    <div>
+                    <div class="posicion">
                         2°G
                     </div>
                 </div>
